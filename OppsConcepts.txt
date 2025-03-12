@@ -1,6 +1,25 @@
-sealed class vs private constructors
+1. sealed class vs private constructors
 
 > The sealed approach is more straightforward for explicitly blocking inheritance. The private constructor is more subtle, usually for design patterns like Singleton.
 
 Yes, you can create an object of a sealed class from outside, just like any regular class. The only restriction is that it cannot be inherited but you cannot create an object from outside the class if the constructor is private.
 Typically, these classes use static methods or properties to control instantiation, like singletons.
+
+2. IEnumerable and IQueryable
+
+> IEnumerable (Namespace: System.Collections)
+
+Purpose: Used for in-memory data collections (like arrays, lists, etc.).
+Execution: Deferred execution — but only when working with LINQ to Objects.
+Database interaction: It cannot perform database queries directly. If you load data from the database into memory (like via ToList() or AsEnumerable()), you can use IEnumerable.
+Filtering: Filtering is done in memory — meaning all data is fetched from the database first, and then filtering happens in the app.
+Use case: Suitable for working with already-loaded data (like manipulating lists or arrays).
+
+
+> IQueryable (Namespace: System.Linq)
+
+Purpose: Used for querying data from a data source (like databases using Entity Framework).
+Execution: Supports deferred execution — queries are built but executed only when iterated or converted (like with ToList()).
+Database interaction: It translates LINQ queries into SQL commands and sends them to the database.
+Filtering: Filtering happens at the database level — meaning only the filtered data is fetched, reducing the amount of data pulled into memory.
+Use case: Best for querying large datasets directly from a database without loading everything into memory first.
