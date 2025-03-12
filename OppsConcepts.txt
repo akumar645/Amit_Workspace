@@ -1,0 +1,6 @@
+sealed class vs private constructors
+
+> The sealed approach is more straightforward for explicitly blocking inheritance. The private constructor is more subtle, usually for design patterns like Singleton.
+
+Yes, you can create an object of a sealed class from outside, just like any regular class. The only restriction is that it cannot be inherited but you cannot create an object from outside the class if the constructor is private.
+Typically, these classes use static methods or properties to control instantiation, like singletons.
