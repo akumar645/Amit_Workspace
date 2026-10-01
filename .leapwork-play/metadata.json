@@ -1,33 +1,33 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-01T13:06:42.938Z",
+  "generatedAt": "2026-10-01T13:29:23.388Z",
   "repo": {
-    "connectorId": 10,
+    "connectorId": 11,
     "repoSlug": "akumar645/Amit_Workspace",
     "baseBranch": "TestProject_120325"
   },
   "team": {
-    "assetId": 143,
+    "assetId": 145,
     "displayId": "TM-1",
-    "name": "MCP-2 Team"
+    "name": "MCP-3 TEAM"
   },
   "tree": [
     {
-      "assetId": 144,
+      "assetId": 146,
       "displayId": "TC-1",
-      "name": "TEST-1",
+      "name": "Untitled",
       "kind": "test-case",
-      "repoPath": "TC-1-TEST-1.spec.ts"
+      "repoPath": "TC-1-Untitled.spec.ts"
     }
   ],
   "files": [
     {
-      "assetId": 144,
+      "assetId": 146,
       "assetKind": "test-case",
       "displayId": "TC-1",
-      "name": "TEST-1",
-      "repoPath": "TC-1-TEST-1.spec.ts",
-      "parentAssetId": 143
+      "name": "Untitled",
+      "repoPath": "TC-1-Untitled.spec.ts",
+      "parentAssetId": 145
     }
   ]
 }
