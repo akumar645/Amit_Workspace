@@ -1,33 +1,33 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-01T08:28:53.600Z",
+  "generatedAt": "2026-10-01T12:29:34.797Z",
   "repo": {
-    "connectorId": 8,
+    "connectorId": 9,
     "repoSlug": "akumar645/Amit_Workspace",
     "baseBranch": "main"
   },
   "team": {
-    "assetId": 137,
+    "assetId": 140,
     "displayId": "TM-1",
-    "name": "Team KB Testing"
+    "name": "MCP KB test"
   },
   "tree": [
     {
-      "assetId": 138,
+      "assetId": 142,
       "displayId": "TC-1",
-      "name": "git Testcase",
+      "name": "New test case",
       "kind": "test-case",
-      "repoPath": "TC-1-git-Testcase.spec.ts"
+      "repoPath": "TC-1-New-test-case.spec.ts"
     }
   ],
   "files": [
     {
-      "assetId": 138,
+      "assetId": 142,
       "assetKind": "test-case",
       "displayId": "TC-1",
-      "name": "git Testcase",
-      "repoPath": "TC-1-git-Testcase.spec.ts",
-      "parentAssetId": 137
+      "name": "New test case",
+      "repoPath": "TC-1-New-test-case.spec.ts",
+      "parentAssetId": 140
     }
   ]
 }
